@@ -1,0 +1,18 @@
+Primeiro, lê a entrada que inclui o número de edifícios N e as alturas dos edifícios.
+
+Inicializa uma variável min com valor zero para representar a energia mínima necessária.
+
+Itera pelos edifícios a partir do último até o primeiro (de trás para frente).
+
+Para cada edifício, calcula a energia mínima necessária para saltar daquele edifício para o próximo. 
+O cálculo é feito utilizando a fórmula (min + height[i]) / 2, onde min representa a energia mínima 
+necessária até o edifício anterior e height[i] é a altura do edifício atual. 
+A função Math.ceil é usada para garantir que o resultado seja arredondado para cima para o próximo número inteiro, 
+já que a energia deve ser um número inteiro.
+
+Atualiza o valor de min com a energia mínima calculada para o edifício atual.
+Finalmente, a energia mínima inicial necessária é o valor de min após a iteração.
+
+A ideia é que, ao calcular a energia mínima necessária de trás para frente, 
+podemos determinar a energia mínima necessária para saltar de cada edifício para o próximo e, no final, 
+obtemos a energia mínima necessária para todo o percurso.
