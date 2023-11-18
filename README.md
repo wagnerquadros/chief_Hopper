@@ -96,4 +96,3 @@ Médoto de força bruta para busca do valor mínimo de energia necessário para 
         return minEnergy;
     }
 ```
-
