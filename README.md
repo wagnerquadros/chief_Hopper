@@ -71,7 +71,7 @@ Médoto de força bruta para busca do valor mínimo de energia necessário para 
 
 
 ```
-    public int BruteForceSerchForMinimumEnergy(List<Integer> arr){
+    public int bruteForceSerchForMinimumEnergy(List<Integer> arr){
 
         int energy;
         int minEnergy = 0;
