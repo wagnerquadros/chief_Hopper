@@ -38,8 +38,8 @@ public class ChiefHopper {
      *  será igual a zero e calcula o valor minimo iniciando pelo último edificio
      *  até o primeiro.
      *
-     * @param arr Uma lista de inteiros representando as alturas dos edifícios.
-     * @return A energia mínima necessária para completar o salto.
+     * @param arr - Uma lista de inteiros representando as alturas dos edifícios.
+     * @return minEnergy - A energia mínima necessária para completar o salto.
      */
     public int result(List<Integer> arr){
         int minEnergy = 0;
