@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"ChiefHopper","l":"BruteForceChiefHopper"},{"p":"ChiefHopper","l":"ChiefHopper"},{"p":"Test","l":"ChiefHopperTest"},{"p":"Test","l":"EntriesReader"},{"p":"<Unnamed>","l":"Main"}];updateSearchResults();
