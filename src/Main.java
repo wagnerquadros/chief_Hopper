@@ -16,15 +16,5 @@ public class Main {
         ChiefHopper chiefHopper = new ChiefHopper();
         List<Integer> arr = chiefHopper.generateBuildings();
         System.out.println("Minimum energy: " + chiefHopper.result(arr));
-
-        BruteForceChiefHopper bf = new BruteForceChiefHopper();
-
-        List<Integer> teste = new ArrayList<>();
-        teste.add(3);
-        teste.add(4);
-        teste.add(3);
-        teste.add(2);
-        teste.add(4);
-        System.out.println("teste = " + bf.BruteForceSerchForMinimumEnergy(arr));
     }
 }

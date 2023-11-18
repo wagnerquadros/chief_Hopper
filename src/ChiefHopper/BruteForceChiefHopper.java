@@ -13,7 +13,7 @@ public class BruteForceChiefHopper {
      * @param arr
      * @return minEnrgy
      */
-    public int BruteForceSerchForMinimumEnergy(List<Integer> arr){
+    public int bruteForceSerchForMinimumEnergy(List<Integer> arr){
 
         int energy;
         int minEnergy = 0;

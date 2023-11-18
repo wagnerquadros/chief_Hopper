@@ -24,7 +24,7 @@ public class ChiefHopperTest {
         arr.add(2);
         arr.add(4);
         int result = ch.result(arr);
-        int bf = bruteForce.BruteForceSerchForMinimumEnergy(arr);
+        int bf = bruteForce.bruteForceSerchForMinimumEnergy(arr);
 
         Assert.assertNotEquals(3, result);
         Assert.assertEquals(4, result);
@@ -76,7 +76,7 @@ public class ChiefHopperTest {
         arr.add(1);
         arr.add(1);
         int result = ch.result(arr);
-        int bf = bruteForce.BruteForceSerchForMinimumEnergy(arr);
+        int bf = bruteForce.bruteForceSerchForMinimumEnergy(arr);
 
         Assert.assertNotEquals(0, result);
         Assert.assertEquals(1, result);
@@ -88,7 +88,7 @@ public class ChiefHopperTest {
 
         arr.add(4);
         int result = ch.result(arr);
-        int bf = bruteForce.BruteForceSerchForMinimumEnergy(arr);
+        int bf = bruteForce.bruteForceSerchForMinimumEnergy(arr);
 
         Assert.assertNotEquals(1, result);
         Assert.assertEquals(2, result);
@@ -107,7 +107,7 @@ public class ChiefHopperTest {
         arr.add(2);
 
         int result = ch.result(arr);
-        int bf = bruteForce.BruteForceSerchForMinimumEnergy(arr);
+        int bf = bruteForce.bruteForceSerchForMinimumEnergy(arr);
 
         Assert.assertNotEquals(2, result);
         Assert.assertEquals(3, result);
@@ -121,7 +121,7 @@ public class ChiefHopperTest {
         String path = "src/Test/entries/test8entries.txt";
         arr = er.getEntries(path);
         int result = ch.result(arr);
-        int bf = bruteForce.BruteForceSerchForMinimumEnergy(arr);
+        int bf = bruteForce.bruteForceSerchForMinimumEnergy(arr);
 
         Assert.assertEquals(result, bf);
     }
