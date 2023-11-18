@@ -6,8 +6,9 @@ Bem-vindo ao mundo Java do VS Code. Aqui está uma diretriz para ajudá-lo a com
 
 O espaço de trabalho contém duas pastas por padrão, onde:
 
-- `src`: a pasta para manter as fontes
-- `lib`: a pasta para manter as dependências
+- `src`: a pasta origem com classe main e pacotes do ChiefHooper e Test
+- `scr/ChiefHopper`: pacote com classes ChiefHopper e BruteForceChiefHopper
+- `scr/Test`: pacote de testes
 
 Enquanto isso, os arquivos de saída compilados serão gerados na pasta `bin` por padrão.
 
@@ -35,8 +36,9 @@ O objetivo é encontrar a energia mínima inicial para que o personagem possa pa
 ## Trecho de código implementado
 
 ```
-public static int chiefHopper(List<Integer> arr) {
+    public int result(List<Integer> arr){
         int minEnergy = 0;
+
         for (int i = arr.size() - 1; i >= 0; i--) {
             minEnergy = (int) Math.ceil((double) (minEnergy + arr.get(i)) / 2);
         }
@@ -60,3 +62,38 @@ public static int chiefHopper(List<Integer> arr) {
  - Dividimos esse valor por 2 e usamos `Math.ceil` para arredondar para cima, garantindo que a energia seja um número inteiro.
  - Repetimos esse cálculo para cada edifício, atualizando `minEnergy` a cada iteração.
  - No final, a função retorna `minEnergy`, que é a energia mínima necessária para o personagem passar por todos os edifícios com sucesso.
+
+## Método de Força Bruta
+
+Médoto de força bruta para busca do valor mínimo de energia necessário para concluir os pulos. O método recebe a lista de edifícios e simula o jogo partindo de energy = 0, incrementando 1 até que a energia seja suficiente para pular todos os edifícios. O método servirá como uma prova real para os testes.
+
+## BruteForceSerchForMinimumEnergy Method
+
+
+```
+    public int BruteForceSerchForMinimumEnergy(List<Integer> arr){
+
+        int energy;
+        int minEnergy = 0;
+
+        while(true) {
+            energy = minEnergy;
+            for (int i = 0; i <= arr.size() - 1 ; i++) {
+
+                if (energy >= arr.get(i)) {
+                    energy = energy + (energy - arr.get(i));
+                } else {
+                    energy = energy - (arr.get(i) - energy);
+                }
+
+                if (energy < 0) break;
+            }
+
+            if (energy >= 0) break;
+
+            minEnergy += 1;
+        }
+        return minEnergy;
+    }
+```
+
