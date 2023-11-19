@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
 
         ChiefHopper chiefHopper = new ChiefHopper();
-        List<Integer> arr = chiefHopper.generateBuildings();
+        List<Integer> arr = chiefHopper.generateBuildings(100000);
         System.out.println("Minimum energy: " + chiefHopper.result(arr));
     }
 }

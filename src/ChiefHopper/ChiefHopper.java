@@ -16,11 +16,10 @@ public class ChiefHopper {
      *
      * @return arr
      */
-    public List<Integer> generateBuildings(){
+    public List<Integer> generateBuildings(int buildingsNumber ){
         Random rand =  new Random();
         List<Integer> arr = new ArrayList<>();
 
-        int buildingsNumber = rand.nextInt(100000)+1;
 
         for(int i=1; i<=  buildingsNumber; i++){
             int height = rand.nextInt(100000)+1;

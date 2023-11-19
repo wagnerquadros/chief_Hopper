@@ -39,7 +39,10 @@ public class ChiefHopperTest {
     public void test2minEnergyMustBe1859(){
         String path = "src/Test/entries/test2entries.txt";
         arr = er.getEntries(path);
+        long startTime = System.nanoTime();
         int result = ch.result(arr);
+        long endTime = System.nanoTime();
+        System.out.println("Tempo de execução: " + (endTime - startTime) + " nanoSegundos");
 
         Assertions.assertNotEquals(1858, result);
         Assertions.assertEquals(1859, result);
@@ -51,18 +54,24 @@ public class ChiefHopperTest {
     public void test3minEnergyMustBe33659(){
         String path = "src/Test/entries/test3entries.txt";
         arr = er.getEntries(path);
+        long startTime = System.nanoTime();
         int result = ch.result(arr);
+        long endTime = System.nanoTime();
+        System.out.println("Tempo de execução: " + (endTime - startTime) + " nanoSegundos");
 
         Assertions.assertNotEquals(33658, result);
         Assertions.assertEquals(33659, result);
         Assertions.assertNotEquals(33660, result);
     }
 
-    @Test //10000 buildings
+    @Test //100000 buildings
     public void test4minEnergyMustBe57957(){
         String path = "src/Test/entries/test4entries.txt";
         arr = er.getEntries(path);
+        long startTime = System.nanoTime();
         int result = ch.result(arr);
+        long endTime = System.nanoTime();
+        System.out.println("Tempo de execução: " + (endTime - startTime) + " nanoSegundos");
 
         Assertions.assertNotEquals(57956, result);
         Assertions.assertEquals(57957, result);
@@ -127,4 +136,73 @@ public class ChiefHopperTest {
 
         Assertions.assertEquals(result, bf);
     }
+
+    @Test
+    public void test10000entries(){
+
+        arr = ch.generateBuildings(10000);
+        long startTime = System.nanoTime();
+        int result = ch.result(arr);
+        long endTime = System.nanoTime();
+        System.out.println("Tempo de execução: " + (endTime - startTime) + " nanoSegundos");
+
+        Assertions.assertEquals(result, result);
+    }
+
+    @Test
+    public void test20000entries(){
+        arr = ch.generateBuildings(20000);
+        long startTime = System.nanoTime();
+        int result = ch.result(arr);
+        long endTime = System.nanoTime();
+        System.out.println("Tempo de execução: " + (endTime - startTime) + " nanoSegundos");
+
+        Assertions.assertEquals(result, result);
+    }
+
+    @Test
+    public void test30000entries(){
+        arr = ch.generateBuildings(30000);
+        long startTime = System.nanoTime();
+        int result = ch.result(arr);
+        long endTime = System.nanoTime();
+        System.out.println("Tempo de execução: " + (endTime - startTime) + " nanoSegundos");
+
+        Assertions.assertEquals(result, result);
+    }
+
+    @Test
+    public void test40000entries(){
+        arr = ch.generateBuildings(40000);
+        long startTime = System.nanoTime();
+        int result = ch.result(arr);
+        long endTime = System.nanoTime();
+        System.out.println("Tempo de execução: " + (endTime - startTime) + " nanoSegundos");
+
+        Assertions.assertEquals(result, result);
+    }
+
+    @Test
+    public void test50000entries(){
+        arr = ch.generateBuildings(50000);
+        long startTime = System.nanoTime();
+        int result = ch.result(arr);
+        long endTime = System.nanoTime();
+        System.out.println("Tempo de execução: " + (endTime - startTime) + " nanoSegundos");
+
+        Assertions.assertEquals(result, result);
+    }
+
+    @Test
+    public void test70000entries(){
+        arr = ch.generateBuildings(70000);
+        long startTime = System.nanoTime();
+        int result = ch.result(arr);
+        long endTime = System.nanoTime();
+        System.out.println("Tempo de execução: " + (endTime - startTime) + " nanoSegundos");
+
+        Assertions.assertEquals(result, result);
+    }
+
+
 }
