@@ -43,6 +43,7 @@ public class ChiefHopper {
         int minEnergy = 0;
 
         for (int i = arr.size() - 1; i >= 0; i--) {
+
             minEnergy = (int) Math.ceil((double) (minEnergy + arr.get(i)) / 2);
         }
         return minEnergy;

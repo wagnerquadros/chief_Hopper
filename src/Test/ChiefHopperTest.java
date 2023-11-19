@@ -33,7 +33,7 @@ public class ChiefHopperTest {
         Assert.assertEquals(4, bf);
     }
 
-    @Test
+    @Test // 99 buildings
     public void test2minEnergyMustBe1859(){
         String path = "src/Test/entries/test2entries.txt";
         arr = er.getEntries(path);
@@ -45,7 +45,7 @@ public class ChiefHopperTest {
 
     }
 
-    @Test
+    @Test // 1000 buildings
     public void test3minEnergyMustBe33659(){
         String path = "src/Test/entries/test3entries.txt";
         arr = er.getEntries(path);
@@ -56,7 +56,7 @@ public class ChiefHopperTest {
         Assert.assertNotEquals(33660, result);
     }
 
-    @Test
+    @Test //10000 buildings
     public void test4minEnergyMustBe57957(){
         String path = "src/Test/entries/test4entries.txt";
         arr = er.getEntries(path);
