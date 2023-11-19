@@ -42,7 +42,7 @@ public class ChiefHopperTest {
         long startTime = System.nanoTime();
         int result = ch.result(arr);
         long endTime = System.nanoTime();
-        System.out.println("Tempo de execução: " + (endTime - startTime) + " nanoSegundos");
+        System.out.println("Tempo de execução (99): " + (endTime - startTime) + " nanoSegundos");
 
         Assertions.assertNotEquals(1858, result);
         Assertions.assertEquals(1859, result);
@@ -57,7 +57,7 @@ public class ChiefHopperTest {
         long startTime = System.nanoTime();
         int result = ch.result(arr);
         long endTime = System.nanoTime();
-        System.out.println("Tempo de execução: " + (endTime - startTime) + " nanoSegundos");
+        System.out.println("Tempo de execução (1.000): " + (endTime - startTime) + " nanoSegundos");
 
         Assertions.assertNotEquals(33658, result);
         Assertions.assertEquals(33659, result);
@@ -71,7 +71,7 @@ public class ChiefHopperTest {
         long startTime = System.nanoTime();
         int result = ch.result(arr);
         long endTime = System.nanoTime();
-        System.out.println("Tempo de execução: " + (endTime - startTime) + " nanoSegundos");
+        System.out.println("Tempo de execução (100.000): " + (endTime - startTime) + " nanoSegundos");
 
         Assertions.assertNotEquals(57956, result);
         Assertions.assertEquals(57957, result);
@@ -144,7 +144,7 @@ public class ChiefHopperTest {
         long startTime = System.nanoTime();
         int result = ch.result(arr);
         long endTime = System.nanoTime();
-        System.out.println("Tempo de execução: " + (endTime - startTime) + " nanoSegundos");
+        System.out.println("Tempo de execução (10.000): " + (endTime - startTime) + " nanoSegundos");
 
         Assertions.assertEquals(result, result);
     }
@@ -155,7 +155,7 @@ public class ChiefHopperTest {
         long startTime = System.nanoTime();
         int result = ch.result(arr);
         long endTime = System.nanoTime();
-        System.out.println("Tempo de execução: " + (endTime - startTime) + " nanoSegundos");
+        System.out.println("Tempo de execução (20.000): " + (endTime - startTime) + " nanoSegundos");
 
         Assertions.assertEquals(result, result);
     }
@@ -166,7 +166,7 @@ public class ChiefHopperTest {
         long startTime = System.nanoTime();
         int result = ch.result(arr);
         long endTime = System.nanoTime();
-        System.out.println("Tempo de execução: " + (endTime - startTime) + " nanoSegundos");
+        System.out.println("Tempo de execução (30.000): " + (endTime - startTime) + " nanoSegundos");
 
         Assertions.assertEquals(result, result);
     }
@@ -177,7 +177,7 @@ public class ChiefHopperTest {
         long startTime = System.nanoTime();
         int result = ch.result(arr);
         long endTime = System.nanoTime();
-        System.out.println("Tempo de execução: " + (endTime - startTime) + " nanoSegundos");
+        System.out.println("Tempo de execução (40.000): " + (endTime - startTime) + " nanoSegundos");
 
         Assertions.assertEquals(result, result);
     }
@@ -188,7 +188,7 @@ public class ChiefHopperTest {
         long startTime = System.nanoTime();
         int result = ch.result(arr);
         long endTime = System.nanoTime();
-        System.out.println("Tempo de execução: " + (endTime - startTime) + " nanoSegundos");
+        System.out.println("Tempo de execução (50.000): " + (endTime - startTime) + " nanoSegundos");
 
         Assertions.assertEquals(result, result);
     }
@@ -199,7 +199,7 @@ public class ChiefHopperTest {
         long startTime = System.nanoTime();
         int result = ch.result(arr);
         long endTime = System.nanoTime();
-        System.out.println("Tempo de execução: " + (endTime - startTime) + " nanoSegundos");
+        System.out.println("Tempo de execução (70.000): " + (endTime - startTime) + " nanoSegundos");
 
         Assertions.assertEquals(result, result);
     }
