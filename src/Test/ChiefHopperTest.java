@@ -2,11 +2,13 @@ package Test;
 
 import ChiefHopper.BruteForceChiefHopper;
 import ChiefHopper.ChiefHopper;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class ChiefHopperTest {
 
@@ -26,11 +28,11 @@ public class ChiefHopperTest {
         int result = ch.result(arr);
         int bf = bruteForce.bruteForceSerchForMinimumEnergy(arr);
 
-        Assert.assertNotEquals(3, result);
-        Assert.assertEquals(4, result);
-        Assert.assertNotEquals(5, result);
+        Assertions.assertNotEquals(3, result);
+        Assertions.assertEquals(4, result);
+        Assertions.assertNotEquals(5, result);
 
-        Assert.assertEquals(4, bf);
+        Assertions.assertEquals(4, bf);
     }
 
     @Test // 99 buildings
@@ -39,9 +41,9 @@ public class ChiefHopperTest {
         arr = er.getEntries(path);
         int result = ch.result(arr);
 
-        Assert.assertNotEquals(1858, result);
-        Assert.assertEquals(1859, result);
-        Assert.assertNotEquals(1860, result);
+        Assertions.assertNotEquals(1858, result);
+        Assertions.assertEquals(1859, result);
+        Assertions.assertNotEquals(1860, result);
 
     }
 
@@ -51,9 +53,9 @@ public class ChiefHopperTest {
         arr = er.getEntries(path);
         int result = ch.result(arr);
 
-        Assert.assertNotEquals(33658, result);
-        Assert.assertEquals(33659, result);
-        Assert.assertNotEquals(33660, result);
+        Assertions.assertNotEquals(33658, result);
+        Assertions.assertEquals(33659, result);
+        Assertions.assertNotEquals(33660, result);
     }
 
     @Test //10000 buildings
@@ -62,9 +64,9 @@ public class ChiefHopperTest {
         arr = er.getEntries(path);
         int result = ch.result(arr);
 
-        Assert.assertNotEquals(57956, result);
-        Assert.assertEquals(57957, result);
-        Assert.assertNotEquals(57958, result);
+        Assertions.assertNotEquals(57956, result);
+        Assertions.assertEquals(57957, result);
+        Assertions.assertNotEquals(57958, result);
     }
 
     @Test
@@ -78,9 +80,9 @@ public class ChiefHopperTest {
         int result = ch.result(arr);
         int bf = bruteForce.bruteForceSerchForMinimumEnergy(arr);
 
-        Assert.assertNotEquals(0, result);
-        Assert.assertEquals(1, result);
-        Assert.assertNotEquals(2, result);
+        Assertions.assertNotEquals(0, result);
+        Assertions.assertEquals(1, result);
+        Assertions.assertNotEquals(2, result);
     }
 
     @Test
@@ -90,11 +92,11 @@ public class ChiefHopperTest {
         int result = ch.result(arr);
         int bf = bruteForce.bruteForceSerchForMinimumEnergy(arr);
 
-        Assert.assertNotEquals(1, result);
-        Assert.assertEquals(2, result);
-        Assert.assertNotEquals(3, result);
+        Assertions.assertNotEquals(1, result);
+        Assertions.assertEquals(2, result);
+        Assertions.assertNotEquals(3, result);
 
-        Assert.assertEquals(2, bf);
+        Assertions.assertEquals(2, bf);
     }
 
     @Test
@@ -109,11 +111,11 @@ public class ChiefHopperTest {
         int result = ch.result(arr);
         int bf = bruteForce.bruteForceSerchForMinimumEnergy(arr);
 
-        Assert.assertNotEquals(2, result);
-        Assert.assertEquals(3, result);
-        Assert.assertNotEquals(4, result);
+        Assertions.assertNotEquals(2, result);
+        Assertions.assertEquals(3, result);
+        Assertions.assertNotEquals(4, result);
 
-        Assert.assertEquals(3, bf);
+        Assertions.assertEquals(3, bf);
     }
 
     @Test
@@ -123,6 +125,6 @@ public class ChiefHopperTest {
         int result = ch.result(arr);
         int bf = bruteForce.bruteForceSerchForMinimumEnergy(arr);
 
-        Assert.assertEquals(result, bf);
+        Assertions.assertEquals(result, bf);
     }
 }
