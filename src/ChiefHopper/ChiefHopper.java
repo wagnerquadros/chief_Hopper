@@ -30,13 +30,11 @@ public class ChiefHopper {
     }
 
     /**
-     * Calcula a energia mínima necessária para um personagem "chief" saltar entre
-     * edifícios.
-     * Considerando o valor mínimo necessário deve ser suficiente para que o
-     * "Chief" consiga pular todos os edificios rentando um mínimo de energia
-     *  > = 0. Sendo assim, o método considera que, ao final dos pulos a energia
-     *  será igual a zero e calcula o valor minimo iniciando pelo último edificio
-     *  até o primeiro.
+     * Calcula a energia mínima necessária para o bot saltar entre edifícios.
+     * Considerando que o valor mínimo necessário para concluir o percurso
+     * seja aquele que, ao final, a energia restante será igual a 0.
+     * Sendo assim, o método considera a energia final igual a 0 e calcula
+     * o valor minimo iniciando pelo último edificio até o primeiro.
      *
      * @param arr - Uma lista de inteiros representando as alturas dos edifícios.
      * @return minEnergy - A energia mínima necessária para completar o salto.

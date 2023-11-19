@@ -3,8 +3,8 @@ import ChiefHopper.ChiefHopper;
 import java.util.List;
 
 /**
- * Este código é um programa Java que calcula a energia mínima para um
- * personagem "Chief" saltar entre edifícios em uma determinada configuração.
+ * Este código é um programa Java que calcula a energia mínima para o
+ * bot saltar entre edifícios em uma determinada configuração.
  * O programa considera as alturas dos edifícios e o gasto de energia ao saltar.
  */
 
