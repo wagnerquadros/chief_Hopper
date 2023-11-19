@@ -1,7 +1,3 @@
-## Começando
-
-Bem-vindo ao mundo Java do VS Code. Aqui está uma diretriz para ajudá-lo a começar a escrever código Java no Visual Studio Code.
-
 ## Estrutura de pastas
 
 O espaço de trabalho contém duas pastas por padrão, onde:
